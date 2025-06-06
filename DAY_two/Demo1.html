@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="Summer Intership Form" />
+    <link rel="icon" href="./Day2image/image.png" />
+    <title>Summer Apprenticeship Application Form</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      "
+    >
+      <p style="font-style: oblique; font-size: 70px">
+        Summer Apprenticeship Application Form
+      </p>
+      <img
+        src="./Day2image/medicintern.png"
+        alt="medicintern"
+        style="width: 500px; height: 500px"
+      />
+    </div>
+    <hr />
+
+    <div>
+      <h1>Enter Your Name</h1>
+      <input
+        type="text"
+        id="firstname"
+        placeholder="First Name"
+        style="width: 500px; height: 50px; font-size: 30px"
+      />
+      <input
+        type="text"
+        name="lastname"
+        id="lsname"
+        placeholder="Last Name"
+        style="width: 500px; height: 50px; font-size: 30px"
+      />
+    </div>
+    <br />
+    <div>
+      <h1>Select Your Gender</h1>
+      <label for="male" style="font-size: 30px">
+        <input
+          type="radio"
+          name="choice"
+          value="male"
+          id="male"
+          style="transform: scale(2); margin-right: 20px"
+        />Male
+      </label>
+      <label for="Female" style="font-size: 30px">
+        <input
+          type="radio"
+          name="choice"
+          value="male"
+          id="Female"
+          style="transform: scale(2); margin-right: 20px"
+        />Female
+      </label>
+    </div>
+
+    <br />
+
+    <div>
+      <h1>Date of birth</h1>
+      <input
+        type="date"
+        id="dob"
+        name="date"
+        placeholder="DD-MM-YYYY"
+        style="width: 500px; height: 50px; font-size: 30px"
+        data-age
+        data-fomat="DD-MM-YYYY"
+        value="numeric"
+        inputmode="numeric"
+      />
+      <button type="button" data-component="datetime"></button>
+    </div>
+    <br />
+
+    <div>
+      <h1>Enter Phone Number</h1>
+      <input
+        type="tel"
+        id="Phoneno"
+        name="numeric"
+        placeholder="(00) 00000-00000"
+        style="width: 500px; height: 50px; font-size: 30px"
+        pattern="\+91\s\d{5}\s\d{5}"
+      />
+    </div>
+    <label for="Phoneno" style="font-size: larger"
+      >please enter a valid phone number</label
+    >
+    <br />
+
+    <div>
+      <h1>Address</h1>
+      <label for="Addslane1" style="font-size: 30px"></label>
+      <input
+        type="text"
+        id="Addslane1"
+        name="S-address"
+        placeholder="Address Lane"
+        style="width: 500px; height: 50px; font-size: 30px"
+      />
+
+      <label for="Addslane2"></label>
+      <input
+        type="text"
+        id="Addslane2"
+        name="S-address"
+        placeholder="Address Lane 2"
+        style="width: 500px; height: 50px; font-size: 30px"
+      />
+    </div>
+
+    <br />
+    <div>
+      <h1>Spoken languages</h1>
+      <input
+        type="checkbox"
+        id="eng"
+        style="transform: scale(2); margin-right: 20px"
+      />
+      <label for="eng" style="font-size: 30px">English</label><br />
+      <input
+        type="checkbox"
+        id="mal"
+        style="transform: scale(2); margin-right: 20px"
+      />
+      <label for="mal" style="font-size: 30px">Malayalam</label><br />
+      <input
+        type="checkbox"
+        id="tamil"
+        style="transform: scale(2); margin-right: 20px"
+      />
+      <label for="tamil" style="font-size: 30px">Tamil</label><br />
+      <input
+        type="checkbox"
+        id="tel"
+        style="transform: scale(2); margin-right: 20px"
+      />
+      <label for="tel" style="font-size: 30px">Telugu</label>
+    </div>
+
+    <div>
+      <h1>Upload Your Resume</h1>
+      <label for="res ">
+        <dialog open>
+          <input type="file" id="res" />
+        </dialog>   
+      </label>
+    </div>
+    <br />
+
+    <hr />
+
+    <div>
+      <h1>Upload Audio</h1>
+      <input
+        type="file"
+        accept="audio/*"
+        style="width: 500px; height: 50px; font-size: 30px"
+      />
+      <audio controls style="margin-top: 10px"></audio>
+    </div>
+    <br />
+    <hr />
+
+    <div>
+      <h1>Upload Video</h1>
+      <input
+        type="file"
+        accept="video/*"
+        style="width: 500px; height: 50px; font-size: 30px"
+      />
+      <video controls width="1000" style="margin-top: 50px"></video>
+    </div>
+  </body>
+</html>
