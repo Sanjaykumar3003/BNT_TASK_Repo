@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>pseudo-demo</title>
+
+    <style>
+      .pesudo {
+        border: solid;
+        height: auto;
+        width: 10rem;
+      }
+
+      .pesudo::first-letter {
+        font-size: 40px;
+        color: red;
+        font-weight: bold;
+      }
+
+      .pseudo-demo::after {
+        content: "💕";
+      }
+      ul li::marker {
+        color: green;
+        font-size: 1.5em;
+        content: "✔";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pesudo">
+      <div class="pseudo-demo" style="overflow-x: scroll; word-wrap: normal">
+        This is a box with pseudo-element for demo purpose Lorem ipsum, dolor
+        sit amet con
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Sidebar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
 
-        body{
-            background-image: url(./op.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            
-           
-        }
-    </style>
+   
+
+    /* Sidebar links */
+    .sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    /* Open button */
+    .open-btn {
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #111;
+      color: white;
+      border: none;
+      margin: 10px;
+    }
+
+    /* Close button */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .main {
+      padding: 20px;
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
-    <p>Demo Data</p>
+
+<!-- Open Button -->
+<button class="open-btn" onclick="openSidebar()">☰ Open Sidebar</button>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+  <span class="close-btn" onclick="closeSidebar()">×</span>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+  <h2>Animated Sidebar Example</h2>
+  <p>This is the main content area. Click the button to toggle the sidebar.</p>
+</div>
+
+<script>
+  function openSidebar() {
+    document.getElementById("mySidebar").style.width = "200px";
+  }
+
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
+
 </body>
 </html>

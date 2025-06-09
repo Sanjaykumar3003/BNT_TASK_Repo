@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #all,
+      #img,
+      #book,
+      #video,
+      #shooping {
+        color: red;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      #all:hover,
+      #img:hover,
+      #book:hover,
+      #video:hover,
+      #shooping:hover {
+        color: rgb(11, 11, 11);
+        border-style: solid;
+        border-color: rgb(157, 5, 5);
+        border-radius: 30px;
+        border-width: 5px;
+        box-sizing: 60px;
+      }
+
+      .card {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .card h3 {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #333;
+      }
+
+      .side {
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        width: 250px;
+        height: 100vh;
+        background: #b51818;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body style="border-style: solid; border-radius: 30px; height: 80px">
+   
+
+    <img
+      src="./gp.png"
+      alt="google"
+      style="
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      "
+    />
+
+    <label style="margin: 250px">
+      <input
+        type="search"
+        id="search"
+        placeholder="Search Google or type a URL"
+        name="Seach"
+        style="width: 500px; position: absolute; top: 15px; left: 200px"
+      />
+      <link rel="icon" href="/Image/Dayonetask/srch.png" />
+    </label>
+
+    <div>
+      <div
+        style="
+          position: absolute;
+          right: 100px;
+          top: 15px;
+          word-spacing: 30px;
+          font-size: xx-large;
+        "
+        ;
+      >
+        <a
+          id="all"
+          href="https://www.google.com/search?sca_esv=0c6b261fdab4471f&rlz=1C1RXQR_enIN1140IN1140&sxsrf=AE3TifNISmgSUWg6XEzTsXZPrANFj7UP9Q:1749200177721&q=google+game&source=lnms&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIesp4JNzLpfTaPhMa2AVaJKoBUdajg2vLRVobxo9kLt29Gqhf5ZIB867XqU3eQV-xbTvIFq2yJ76rPGX6cCt6jVv7xFaVNNufVXEtiDvZ5Pr6jAeg5KnpnrNN_gMfe_NTEz0yVAh8ecM3uJeQSU5EX13A4Za-gJxfdJHP4UkmLhrGDIavKRDn0698v8BNe_Zwg58rz60&sa=X&ved=2ahUKEwjfwe-5ttyNAxVqQ2cHHYiAB70Q0pQJegQIFhAB&biw=1536&bih=738&dpr=1.25"
+        >
+          All</a
+        >
+        <a
+          id="img"
+          href="https://www.google.com/search?sca_esv=0c6b261fdab4471f&rlz=1C1RXQR_enIN1140IN1140&sxsrf=AE3TifOZ0lIF5FC9tYTB1Qjg7PvCn-r3eg:1749200446392&q=navigation+bar+image&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeoJTKjrFjVxydQWqI2NcOhZVmrJB8DQUK5IzxA2fZbQF4YL5sNSRJGgx0e9Z9AxEx1bmPbSY3ROQyoKhw9UuuwNOze1rMTfR8LJZdQ9FI96CmdBJWTydVJVILJpUCMhUJaivtxJ0ArVSPoESF5gtgDTwfAIvL61r650S64avOx1wd9u3Yw&sa=X&ved=2ahUKEwj49_25t9yNAxUNcWwGHTYyHI8QtKgLegQIFBAB&biw=1536&bih=738&dpr=1.25"
+        >
+          Image</a
+        >
+        <a
+          id="book"
+          href="https://www.google.com/search?sca_esv=0c6b261fdab4471f&rlz=1C1RXQR_enIN1140IN1140&sxsrf=AE3TifNISmgSUWg6XEzTsXZPrANFj7UP9Q:1749200177721&q=google+game&udm=36&source=lnms&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIesp4JNzLpfTaPhMa2AVaJKoBUdajg2vLRVobxo9kLt29Gqhf5ZIB867XqU3eQV-xbTvIFq2yJ76rPGX6cCt6jVv7xFaVNNufVXEtiDvZ5Pr6jAeg5KnpnrNN_gMfe_NTEz0yVAh8ecM3uJeQSU5EX13A4Za-gJxfdJHP4UkmLhrGDIavKRDn0698v8BNe_Zwg58rz60&sa=X&ved=2ahUKEwjfwe-5ttyNAxVqQ2cHHYiAB70Q0pQJegQIFBAB&biw=1536&bih=738&dpr=1.25"
+          >Books</a
+        >
+        <a
+          id="video"
+          href="https://www.google.com/search?sca_esv=0c6b261fdab4471f&rlz=1C1RXQR_enIN1140IN1140&sxsrf=AE3TifORFhM15m6cRodGhNr-shbmCDGvfA:1749200721846&q=navigation+bar+image&udm=7&fbs=AIIjpHxCtmkhHKu27CW9pNYJlh4RoZZ_y8scaivnpjp3a9aEstvyzM9WArA0Q4B52rAVe2QNsj_451Xh5JY5sEH7FWDtA30t_tdYVQtaA2js5ULsljOwR75mryKFQvMDE3Lt8v3M7siLwRK6t_e9lKEUyMr8UYN7a2CQk92D-RcGnKFX-eb9bgVV6DmSuk-fOW2QhRsgqQuOGhgvcO4kWvINmg63E_AXpzqWdyAUMPbZnfd_qmgFits&sa=X&ved=2ahUKEwjMpaq9uNyNAxXskq8BHdE7DfoQtKgLegQIEhAB&biw=1536&bih=738&dpr=1.25"
+          >Videos</a
+        >
+        <a
+          id="shooping"
+          href="https://www.google.com/search?sca_esv=0c6b261fdab4471f&rlz=1C1RXQR_enIN1140IN1140&sxsrf=AE3TifNs51NdmRBNOPdQVYmeC2e5S2ePoA:1749201536600&q=navigation+bar+image&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeoJTKjrFjVxydQWqI2NcOhZVmrJB8DQUK5IzxA2fZbQF4YL5sNSRJGgx0e9Z9AxEx1bmPbSY3ROQyoKhw9UuuwNOze1rMTfR8LJZdQ9FI96CmdBJWTydVJVILJpUCMhUJaivtxJ0ArVSPoESF5gtgDTwfAIvL61r650S64avOx1wd9u3Yw&ved=1t:220175&ictx=111&biw=1536&bih=738&dpr=1.25"
+          >Shopping</a
+        >
+      </div>
+
+      <br />
+      <div class="card" style="position: absolute; left: 100px; top: 300px">
+        <img src="card1.png" alt="card" />
+        <pre>Card 3</pre>
+      </div>
+
+      <br />
+      <div class="card" style="position: absolute; left: 600px; top: 300px">
+        <img src="image.png" alt="card" />
+        <pre>Card 2</pre>
+      </div>
+
+      <br />
+      <div class="card" style="position: absolute; left: 1100px; top: 300px">
+        <img src="img3.png" alt="card" />
+        <pre>Card 3</pre>
+      </div>
+
+     
+       <div class="Side">
+      <p>side</p>
+    </div>
+    </div>
+  </body>
+</html>

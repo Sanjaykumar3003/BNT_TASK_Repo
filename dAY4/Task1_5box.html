@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: auto;
+        margin: auto;
+      }
+
+      .container {
+        border: solid;
+        height: 150vh;
+        width: 50rem;
+        position: relative;
+        margin: auto;
+        padding: auto;
+      }
+
+      .absolute {
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: orange;
+      }
+
+      .box {
+        border-style: solid;
+        height: 2rem;
+        width: 2rem;
+        padding: 50px;
+        margin: auto;
+        display: flex;
+      }
+      .cont2 {
+        border: solid;
+        height: 100vh;
+        width: 30rem;
+        margin: auto;
+        padding: auto;
+      }
+
+      .container3 {
+        border: solid;
+        height: 50vh;
+        width: 20rem;
+      }
+
+      .two {
+        left: 0;
+        background-color: brown;
+      }
+
+      .fixed {
+        position: fixed;
+        background-color: yellow;
+      }
+
+      .bxsticky {
+        left: 0;
+        top: 0;
+        position: sticky;
+        background-color: rgb(10, 171, 147);
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box fixed">fixed</span>
+    <div class="container">
+      container one
+
+      <div class="cont2">
+        container two
+        <div class="bxabsolute">
+          <span class="box absolute"> absolute</span>
+          <span class="box two">absolute2</span>
+        </div>
+        <div class="container3">
+          <div class="bxsticky">
+            <span class="box sticky">sticky</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

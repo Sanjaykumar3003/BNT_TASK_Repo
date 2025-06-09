@@ -1,0 +1,71 @@
+<style>
+    *{
+        margin:auto;
+        padding: auto;
+    }
+  .large-box {
+    width: 900px; height: 900px;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .small-box {
+    width: 600px; height: 600px;
+    background: lightgreen;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  .smaller-box {
+    width: 300px; height: 300px;
+    background: lightpink;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+   
+  }
+  .mini-container {
+    width: 100%;
+    height: 100%;
+    background: beige;
+  }
+  .mini-box {
+    width: 80px; height: 80px;
+    border: 1px solid #333;
+    margin: 10px;
+  }
+  .fixed {
+    position: fixed;
+    top:-10px;
+    right: px;
+    background: yellow;
+  }
+  .relative {
+    position: relative;
+    top: -160px;
+    left: -160px;
+    background: orange;
+  }
+  .sticky {
+    position: sticky;
+    top:0;
+    background: lightcoral;
+  }
+</style>
+
+<div class="box large-box">
+  <div class="box small-box">
+    <div class="box smaller-box">
+      <div class="mini-container">
+        <div class="mini-box fixed">Fixed</div>
+        <div class="mini-box relative">Relative</div>
+        <div class="mini-box sticky">Sticky</div>
+      </div>
+    </div>
+  </div>
+</div>

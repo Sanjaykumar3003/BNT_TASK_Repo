@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom Square</title>
+    <style>
+      .square {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(168, 9, 115);
+        transition: transform 2s ease;
+        margin: 100px auto;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-shadow: 2px 2px;
+        box-shadow: rgba(196, 46, 91, 0.749);
+      }
+
+      .square:hover {
+        transform: scale(2.2); /* zoom in */
+      }
+
+      .square:active {
+        transform: scale(2.9); /* zoom out when clicked */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square" style="font-family: Algerian">over here</div>
+  </body>
+</html>
