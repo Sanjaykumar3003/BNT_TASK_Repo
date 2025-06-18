@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Classes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .container {
+      padding:5px 50px;
+    }
+
+    .class-card {
+      height: fit-content;
+      border: 1px solid #ddd;
+      transition: all 0.3s ease-in-out;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .class-card:hover {
+      transform: translateY(-10px);
+      background-color: #f0f0f0;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .class-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .class-card img:hover {
+      opacity: 0.9;
+      filter: brightness(80%);
+    }
+
+    .book-btn {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 5px;
+    }
+
+    .book-btn:hover {
+      background-color: #333;
+    }
+
+    .section-title {
+      font-family: serif;
+      font-style: italic;
+      font-size: 2rem;
+      margin-top: 40px;
+    }
+
+    .section-desc {
+      max-width: 700px;
+      margin: 10px auto 90px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .footer {
+      background-color: #EBE8DF;
+      padding: 30px 0;
+    }
+
+    .footera a {
+      text-decoration: none;
+      color: black;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-white text-black p-3">
+  <div class="container">
+    <div class="d-flex me-3">
+      <img src="./images/logo.png" class="img-fluid" alt="logo" style="width: 70px;">
+    </div>
+    <a class="navbar-brand fw-bold" href="#">Inner Peace <p class="lead text-center" style="font-size: x-small;">Meditate Urself</p></a>
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="bootstrap proj1.html">Home</a></li>
+        <button style="background-color: #EBE8DF;border-style: none;">
+        <li class="nav-item"><a class="nav-link" href="bootstrap proj1.html">Back</a></li></button>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br>
+<!-- Main Section -->
+<section class="container text-center my-5">
+  <h2 class="section-title">Our Classes</h2>
+  <p class="section-desc">
+    I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+    Feel free to drag and drop me anywhere you like on your page. I'm a great place for you to tell a story and let your users know a little more about you.
+  </p>
+
+  <div class="row g-4 justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+      <div class="class-card">
+        <img src="./images/our services1.png" alt="One-on-One" class="img-fluid">
+        <div class="p-3 text-center card-body">
+          <h5>One-on-One<br> Meditation Practice</h5><hr>
+          <p class="mb-1">1 hr 30 min</p>
+          <p>$50</p>
+        </div>
+        <div class="p-3 text-center">
+          <button class="book-btn ">Book It</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+      <div class="class-card">
+        <img src="./images/our services2.png" alt="Group Meditation" class="img-fluid">
+        <div class="p-3 text-center card-body">
+          <h5>Group Meditation</h5><hr>
+          <p class="mb-1">Mon - Fri</p>
+          <p class="mb-1">1 hr 30 min</p>
+          <p>$20</p>
+        </div>
+        <div class="p-3 text-center">
+          <button class="book-btn">Book It</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-sm-12 col-md-6 col-lg-4 d-flex">
+      <div class="class-card">
+        <img src="./images/our services3.png" alt="Intro to Meditation" class="img-fluid">
+        <div class="p-3 text-center card-body">
+          <h5>Intro to Meditation</h5><hr>
+          <p class="mb-1">Mon - Fri</p>
+          <p class="mb-1">1 hr 30 min</p>
+          <p>$10</p>
+        </div>
+        <div class="p-3 text-center">
+          <button class="book-btn">Book It</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<div class="footer">
+  <footer class="text-black text-center">
+    <div class="footera">
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Shipping Policy</a>
+      <a href="#">Refund Policy</a>
+    </div>
+    <br>
+    <div>&copy; 2025 Inner Peace. All rights reserved.</div>
+  </footer>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
