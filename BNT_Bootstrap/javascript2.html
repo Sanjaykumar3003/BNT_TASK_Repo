@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Find Unique Elements in Two Arrays</h2>
+
+    <script>
+      let arr1 = [1, 3, 1, 3, 6, 2, 3];
+      let arr2 = [2, 4, 5];
+      function findUniqueElements(arr1, arr2) {
+        const uniqueElements = new Set(arr1.concat(arr2));
+        return Array.from(uniqueElements);
+      }
+
+      console.log(findUniqueElements(arr1, arr2)); // Output: [1, 2, 3, 4, 5]
+    </script>
+  </body>
+</html>

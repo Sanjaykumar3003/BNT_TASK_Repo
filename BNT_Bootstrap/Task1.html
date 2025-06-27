@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="#"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="image.png" class="card-img-top" alt="Card 1" />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 1</h5>
+              <p class="card-text">This is a short description for card 1.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="image.png" class="card-img-top" alt="Card 2" />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 2</h5>
+              <p class="card-text">This is a short description for card 2.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="image.png" class="card-img-top" alt="Card 3" />
+            <div class="card-body">
+              <h5 class="card-title">Card Title 3</h5>
+              <p class="card-text">This is a short description for card 3.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>mostRepeated character in String</h2>
+
+    <script>
+      function mostRepeatedChar(str) {
+        const charCount = {};
+        let maxChar = "";
+        let maxCount = 0;
+
+        for (const char of str) {
+          charCount[char] = (charCount[char] || 0) + 1;
+          if (charCount[char] > maxCount) {
+            maxCount = charCount[char];
+            maxChar = char;
+          }
+        }
+
+        return maxChar;
+      }
+
+      console.log("Most Repeted Character in String");
+      console.log(mostRepeatedChar("hellloooo"));
+    </script>
+
+    <h2>Find Unique Elements in Two Arrays</h2>
+
+    <script>
+      let arr1 = [1, 3, 1, 3, 6, 2, 3];
+      let arr2 = [2, 4, 5];
+      function findUniqueElements(arr1, arr2) {
+        const uniqueElements = new Set(arr1.concat(arr2));
+        return Array.from(uniqueElements);
+      }
+      console.log("Find Unique Elements in Two Arrays");
+      console.log(findUniqueElements(arr1, arr2)); // Output: [1, 2, 3, 4, 5]
+    </script>
+
+    <h2>Find the Longest Word in a Sentence</h2>
+    <script>
+      function findLongestWord(sentence) {
+        const words = sentence.split(" ");
+        let longestWord = "";
+
+        for (const word of words) {
+          if (word.length > longestWord.length) {
+            longestWord = word;
+          }
+        }
+
+        return longestWord;
+      }
+      console.log("Find the Longest Word in a Sentence");
+      console.log(findLongestWord("JavaScript is powerful")); // Output: "JavaScript"
+    </script>
+
+    <h2>Chaining Method Example</h2>
+    <script>
+      function chain(value) {
+        return {
+          add: function (n) {
+            value += n;
+            return this;
+          },
+          subtract: function (n) {
+            value -= n;
+            return this;
+          },
+          result: function () {
+            return value;
+          },
+        };
+      }
+
+      console.log("Chaining Method Example");
+      const output = chain(5).add(0).subtract(1).result();
+      console.log("Output: " + output); // Output: 6
+    </script>
+
+    <script>
+      console.log(greet());
+
+      function greet() {
+        return "Hello, World!";
+      }
+
+      console.log(myVar);
+      var myVar = 10;
+      console.log(myVar);
+    </script>
+
+    <div class="container mt-5">
+      <h2>CSS Units Example</h2>
+      <div class="row">
+        <div class="col-12">
+          <p style="font-size: 16px">
+            This text is sized with <strong>px</strong>.
+          </p>
+          <p style="font-size: 1.5em">
+            This text is sized with <strong>em</strong>.
+          </p>
+          <p style="font-size: 2rem">
+            This text is sized with <strong>rem</strong>.
+          </p>
+          <p style="font-size: 150%">
+            This text is sized with <strong>%</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

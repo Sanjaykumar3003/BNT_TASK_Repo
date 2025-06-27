@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Chaining Method Example</h2>
+    <script>
+      function chain(value) {
+        return {
+          add: function (n) {
+            value += n;
+            return this;
+          },
+          subtract: function (n) {
+            value -= n;
+            return this;
+          },
+          result: function () {
+            return value;
+          },
+        };
+      }
+
+      const output = chain(5).add(0).subtract(1).result();
+      console.log("Output: " + output); // Output: 6
+    </script>
+  </body>
+</html>
